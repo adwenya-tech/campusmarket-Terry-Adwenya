@@ -16,6 +16,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="catalog.html" class="active">Catalog</a></li>
+        <li><a href="register.html">Register</a></li>
       </ul>
     </nav>
     <a href="catalog.html" class="btn btn-lime">Sell an item</a>
@@ -37,7 +38,7 @@
         <option value="all">All categories</option>
         <option value="books">Books</option>
         <option value="electronics">Electronics</option>
-        <option value="dorm">Dorm Gear</option>
+        <option value="dorm">Dorm gear</option>
         <option value="fashion">Fashion</option>
         <option value="other">Other</option>
       </select>
@@ -48,12 +49,12 @@
 
         <li class="product-card" data-category="books">
           <article>
-            <h2 class="product-name">Calculus II Textbook</h2>
+            <h2 class="product-name">Calculus II textbook</h2>
             <p class="product-desc">7th edition, lightly used, some highlighting in chapters 3&ndash;5. Still has the practice problem sets.</p>
             <p class="product-price">KSh 900</p>
             <span class="badge badge-lime">Verified seller</span>
             <div class="qty-row">
-              <label for="qty-p1">qty</label>
+              <label for="qty-p1">Qty</label>
               <input type="number" id="qty-p1" class="qty-input" min="0" value="0" oninput="updateLineTotal('p1', 900)">
               <span class="line-total" id="line-total-p1">KSh 0</span>
             </div>
@@ -63,7 +64,7 @@
         <li class="product-card" data-category="electronics">
           <article>
             <h2 class="product-name">Dell monitor, 22"</h2>
-            <p class="product-desc">Full HD, barely used this semester. Comes with power cable and HDMI cable.</p>
+            <p class="product-desc">Full HD, barely used this semester. comes with power cable and HDMI cable.</p>
             <p class="product-price">KSh 4,500</p>
             <span class="badge badge-lime">Verified seller</span>
             <div class="qty-row">
@@ -79,7 +80,7 @@
             <h2 class="product-name">Mountain bike</h2>
             <p class="product-desc">Gets you across campus in ten minutes flat. New tires, minor scratches on the frame.</p>
             <p class="product-price">KSh 6,000</p>
-            <span class="badge badge-yellow">new seller</span>
+            <span class="badge badge-yellow">New seller</span>
             <div class="qty-row">
               <label for="qty-p3">Qty</label>
               <input type="number" id="qty-p3" class="qty-input" min="0" value="0" oninput="updateLineTotal('p3', 6000)">
@@ -93,7 +94,7 @@
             <h2 class="product-name">Campus hoodie, size M</h2>
             <p class="product-desc">Official campus hoodie, worn a handful of times, no stains or pilling.</p>
             <p class="product-price">KSh 800</p>
-            <span class="badge badge-lime">verified seller</span>
+            <span class="badge badge-lime">Verified seller</span>
             <div class="qty-row">
               <label for="qty-p4">Qty</label>
               <input type="number" id="qty-p4" class="qty-input" min="0" value="0" oninput="updateLineTotal('p4', 800)">
@@ -107,7 +108,7 @@
             <h2 class="product-name">Mini fridge</h2>
             <p class="product-desc">Perfect for a dorm room. Clean, works well, selling because I'm moving out.</p>
             <p class="product-price">KSh 5,200</p>
-            <span class="badge badge-lime">verified seller</span>
+            <span class="badge badge-lime">Verified seller</span>
             <div class="qty-row">
               <label for="qty-p5">Qty</label>
               <input type="number" id="qty-p5" class="qty-input" min="0" value="0" oninput="updateLineTotal('p5', 5200)">
@@ -120,11 +121,11 @@
           <article>
             <h2 class="product-name">Scientific calculator</h2>
             <p class="product-desc">Casio fx-991, exactly what you need for engineering courses. Includes manual.</p>
-            <p class="product-price">KSh 2,000</p>
+            <p class="product-price">KSh 1,500</p>
             <span class="badge badge-magenta">Selling fast</span>
             <div class="qty-row">
               <label for="qty-p6">Qty</label>
-              <input type="number" id="qty-p6" class="qty-input" min="0" value="0" oninput="updateLineTotal('p6', 2000)">
+              <input type="number" id="qty-p6" class="qty-input" min="0" value="0" oninput="updateLineTotal('p6', 1500)">
               <span class="line-total" id="line-total-p6">KSh 0</span>
             </div>
           </article>
