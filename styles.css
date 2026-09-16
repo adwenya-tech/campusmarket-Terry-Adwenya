@@ -366,6 +366,76 @@ ul {
   font-size: 15px;
 }
 
+/* register form */
+
+.form-section {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 56px 32px;
+}
+
+.form-section h1 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  margin: 0 0 8px;
+}
+
+.form-section > p {
+  color: var(--ink-soft);
+  margin: 0 0 28px;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  font-family: var(--font-body);
+  font-size: 14px;
+  padding: 10px 12px;
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  background: #ffffff;
+  color: var(--ink);
+}
+
+.checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-group label {
+  margin: 0;
+}
+
+.error-message {
+  color: var(--magenta);
+  font-size: 12px;
+  min-height: 16px;
+  margin-top: 4px;
+}
+
+.form-success {
+  display: none;
+  margin-top: 16px;
+  padding: 12px 14px;
+  background: var(--lime);
+  color: var(--ink);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
 /* footer */
 
 .site-footer {
