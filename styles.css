@@ -295,6 +295,77 @@ ul {
   color: #ffffff;
 }
 
+/* filter bar */
+
+.filter-bar {
+  display: flex;
+  gap: 12px;
+  padding: 0 32px 24px;
+  flex-wrap: wrap;
+}
+
+.filter-bar input,
+.filter-bar select {
+  font-family: var(--font-body);
+  font-size: 14px;
+  padding: 10px 14px;
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  background: #ffffff;
+  color: var(--ink);
+}
+
+.filter-bar input {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* quantity row */
+
+.qty-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--card-border);
+}
+
+.qty-row label {
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+
+.qty-input {
+  width: 50px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  padding: 4px 6px;
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+}
+
+.line-total {
+  margin-left: auto;
+  font-family: var(--font-display);
+  font-size: 13px;
+}
+
+/* grand total bar */
+
+.grand-total-bar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 260px;
+  margin: 0 32px 48px auto;
+  background: var(--violet);
+  color: var(--lavender);
+  padding: 14px 20px;
+  border-radius: 6px;
+  font-family: var(--font-display);
+  font-size: 15px;
+}
+
 /* footer */
 
 .site-footer {

@@ -27,64 +27,115 @@
       <p>A few things students on campus are selling right now.</p>
     </section>
 
+    <section class="filter-bar">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="search listings..."
+        oninput="filterProducts()">
+      <select id="category-select" onchange="filterProducts()">
+        <option value="all">All categories</option>
+        <option value="books">Books</option>
+        <option value="electronics">Electronics</option>
+        <option value="dorm">Dorm Gear</option>
+        <option value="fashion">Fashion</option>
+        <option value="other">Other</option>
+      </select>
+    </section>
+
     <section class="catalog">
       <ul class="product-grid">
 
-        <li class="product-card">
+        <li class="product-card" data-category="books">
           <article>
-            <h2 class="product-name">Calculus II textbook</h2>
-            <p class="product-desc">7th edition, slightly used, some highlighting in chapters 3&ndash;5. Still has the practice problem sets.</p>
+            <h2 class="product-name">Calculus II Textbook</h2>
+            <p class="product-desc">7th edition, lightly used, some highlighting in chapters 3&ndash;5. Still has the practice problem sets.</p>
             <p class="product-price">KSh 900</p>
             <span class="badge badge-lime">Verified seller</span>
+            <div class="qty-row">
+              <label for="qty-p1">qty</label>
+              <input type="number" id="qty-p1" class="qty-input" min="0" value="0" oninput="updateLineTotal('p1', 900)">
+              <span class="line-total" id="line-total-p1">KSh 0</span>
+            </div>
           </article>
         </li>
 
-        <li class="product-card">
+        <li class="product-card" data-category="electronics">
           <article>
             <h2 class="product-name">Dell monitor, 22"</h2>
             <p class="product-desc">Full HD, barely used this semester. Comes with power cable and HDMI cable.</p>
             <p class="product-price">KSh 4,500</p>
             <span class="badge badge-lime">Verified seller</span>
+            <div class="qty-row">
+              <label for="qty-p2">Qty</label>
+              <input type="number" id="qty-p2" class="qty-input" min="0" value="0" oninput="updateLineTotal('p2', 4500)">
+              <span class="line-total" id="line-total-p2">KSh 0</span>
+            </div>
           </article>
         </li>
 
-        <li class="product-card">
+        <li class="product-card" data-category="other">
           <article>
             <h2 class="product-name">Mountain bike</h2>
             <p class="product-desc">Gets you across campus in ten minutes flat. New tires, minor scratches on the frame.</p>
             <p class="product-price">KSh 6,000</p>
-            <span class="badge badge-yellow">New seller</span>
+            <span class="badge badge-yellow">new seller</span>
+            <div class="qty-row">
+              <label for="qty-p3">Qty</label>
+              <input type="number" id="qty-p3" class="qty-input" min="0" value="0" oninput="updateLineTotal('p3', 6000)">
+              <span class="line-total" id="line-total-p3">KSh 0</span>
+            </div>
           </article>
         </li>
 
-        <li class="product-card">
+        <li class="product-card" data-category="fashion">
           <article>
             <h2 class="product-name">Campus hoodie, size M</h2>
             <p class="product-desc">Official campus hoodie, worn a handful of times, no stains or pilling.</p>
             <p class="product-price">KSh 800</p>
-            <span class="badge badge-lime">Verified seller</span>
+            <span class="badge badge-lime">verified seller</span>
+            <div class="qty-row">
+              <label for="qty-p4">Qty</label>
+              <input type="number" id="qty-p4" class="qty-input" min="0" value="0" oninput="updateLineTotal('p4', 800)">
+              <span class="line-total" id="line-total-p4">KSh 0</span>
+            </div>
           </article>
         </li>
 
-        <li class="product-card">
+        <li class="product-card" data-category="dorm">
           <article>
             <h2 class="product-name">Mini fridge</h2>
             <p class="product-desc">Perfect for a dorm room. Clean, works well, selling because I'm moving out.</p>
             <p class="product-price">KSh 5,200</p>
-            <span class="badge badge-lime">Verified seller</span>
+            <span class="badge badge-lime">verified seller</span>
+            <div class="qty-row">
+              <label for="qty-p5">Qty</label>
+              <input type="number" id="qty-p5" class="qty-input" min="0" value="0" oninput="updateLineTotal('p5', 5200)">
+              <span class="line-total" id="line-total-p5">KSh 0</span>
+            </div>
           </article>
         </li>
 
-        <li class="product-card">
+        <li class="product-card" data-category="electronics">
           <article>
             <h2 class="product-name">Scientific calculator</h2>
             <p class="product-desc">Casio fx-991, exactly what you need for engineering courses. Includes manual.</p>
             <p class="product-price">KSh 2,000</p>
             <span class="badge badge-magenta">Selling fast</span>
+            <div class="qty-row">
+              <label for="qty-p6">Qty</label>
+              <input type="number" id="qty-p6" class="qty-input" min="0" value="0" oninput="updateLineTotal('p6', 2000)">
+              <span class="line-total" id="line-total-p6">KSh 0</span>
+            </div>
           </article>
         </li>
 
       </ul>
+    </section>
+
+    <section class="grand-total-bar">
+      <span>Cart total:</span>
+      <span id="grand-total">KSh 0</span>
     </section>
   </main>
 
@@ -92,5 +143,6 @@
     <p>&copy; 2026 Campus Market. Built by students, for students.</p>
   </footer>
 
+  <script src="app.js"></script>
 </body>
 </html>
